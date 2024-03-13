@@ -135,7 +135,7 @@ const App = () => {
     closeEditeModal();
   };
   
-  const renderProductList = products.map((product,idx,productToEditIdx) => (
+  const renderProductList = products.map((product,idx) => (
    
         <ProductCard key={product.id}
          product={product}
@@ -146,7 +146,7 @@ const App = () => {
           
           />
 
-   
+       
   ));
   const removeProductHandler = () => {
     const filtered = products.filter(product => product.id !== productToEdit.id);
